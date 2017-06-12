@@ -1,0 +1,689 @@
+/* MEYERS RESET */ 
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY STYLES */
+
+body {
+	background-color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+h1 {
+	font-family: 'Overpass' , sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Overpass' , sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Overpass' , sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+}
+
+p {
+	font-family:'Montserrat' , sans-serif;
+	font-size: 15px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.line_break_1 {
+	width: 100px;
+	border-top: 1.5px solid #292929;
+}
+
+.line_break_2 {
+	width: 100px;
+	border-top: 1.5px solid #ffffff;
+}
+
+/* NAVIGATION */
+
+nav ul {
+	position: relative;
+	list-style-type: none; 
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	background-color: #333;
+	width:100%;
+	z-index: +3;
+}
+
+nav li {
+
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 15px;
+	float: left;
+}
+
+nav li last-child {
+    border-right: none;
+}
+
+
+nav li a {
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+}
+
+nav li a.active {
+	background-color: #4caf50;
+	color: #ffffff;
+}
+
+	nav li a:hover:not(.active) {
+	background-color: #555;
+	color: #ffffff;
+}
+
+
+/* HOME SECTION */ 
+
+#home_section header {
+	padding-top: 80px;
+	padding-bottom:80px;
+	text-align: center;
+	font-weight: 900;
+	font-family: 'Overpass' , sans-serif;
+	font-size: 120px;
+	margin: 0 auto;
+	color: #f1f1f1;
+}
+
+#home_section {
+	background-color: #292929;
+	background-image: url('../imgs/home_img_black.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:800px;
+}
+
+/* HOME SEARCH AREA */ 
+
+#form {
+
+	width: 40%;
+	margin: 0 auto;
+	border-radius: 5px;
+	background-color: #292929;
+	padding: 20px;
+	text-align: center;
+}
+
+#search_form label {
+
+	color:white;
+}
+
+
+#search_form input[type=text], select {
+	width: 90%;
+	padding:10px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+#search_form input[type=submit] {
+	width: 30%;
+	background-color: #4caf50;
+	color:white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+#search_form input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+/* ABOUT US */ 
+
+
+#about_info {
+	position: relative;
+}
+
+#about_img {
+
+	background-color: #292929;
+	background-image: url('../imgs/water_rocks.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:800px;
+}
+
+.about_slants:before {
+	position:absolute;
+	width:100%;
+	height: 100%;
+	content: '';
+	background-color: inherit;
+	z-index: -1;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	transform-origin: bottom right;
+	transform: skewY(4deg)
+}
+
+
+.about_slants {
+	position: relative;
+	width:100%;
+	height: 160px;
+	padding-top: 20px;
+	background-color: white;
+	z-index:+1;
+}
+
+.about_slants:after{
+	position:absolute;
+	width:100%;
+	height: 100%;
+	content: '';
+	background-color: inherit;
+	z-index: -1;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	transform-origin: top left;
+	transform: skewY(4deg)
+}
+
+/* HOW IT WORKS*/
+
+#how_info {
+
+	position: relative;
+
+}
+
+.steps {
+	display:block;
+	float:left;
+	width:20%;
+	height:auto;
+	padding: 2.5%;
+	
+	}
+
+
+#how_img {
+
+	background-color: #292929;
+	background-image: url('../imgs/forrest_picture.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:800px;
+}
+
+.how_slant:before {
+	position:absolute;
+	width:100%;
+	height: 100%;
+	content: '';
+	background-color: inherit;
+	z-index: -1;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	transform-origin: top right;
+	transform: skewY(-4deg)
+}
+
+
+
+.how_slant {
+	position: relative;
+	width:100%;
+	height: 230px;
+	padding-top: 20px;
+	background-color: white;
+	z-index:+1;
+}
+
+.how_slant:after{
+	position:absolute;
+	width:100%;
+	height: 100%;
+	content: '';
+	background-color: inherit;
+	z-index: -1;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	transform-origin: bottom left;
+	transform: skewY(-4deg)
+}
+
+/* PACKAGES */ 
+
+#package_info {
+
+	position: relative;
+}
+
+#package_adventurer{
+	display:block;
+	float:left;
+	width:20%;
+	height: 0 auto;
+	margin: 0 auto;
+	padding-left:5%;
+	padding-right:1.66%;
+	margin-top:20px;
+}
+
+#package_camper{
+	display:block;
+	float:left;
+	width:20%;s
+	height: 0 auto;
+	margin: 0 auto;
+	padding-left:1.66%;
+	padding-right:1.66%;
+	margin-top:20px;
+}
+
+#package_explorer{
+	display:block;
+	float:left;
+	width:20%;
+	height: 0 auto;
+	margin: 0 auto;
+	padding-left:1.66%;
+	padding-right:1.66%;
+	margin-top:20px;
+}
+
+#package_easy_going{
+	display:block;
+	float:left;
+	width:20%;
+	height: 0 auto;
+	margin: 0 auto;
+	padding-left:1.66%;
+	padding-right:5%;
+	margin-top:20px;
+}
+
+.article_img {
+	position:relative;
+	width: 100%;
+}
+
+
+.package_div {
+
+	position: relative;
+	width:100%;
+	height: 800px;
+	padding-top: 50px;
+	background-color: white;
+	z-index:+1;
+}
+
+.package_img {
+
+width:100%;
+}
+
+.description {
+	background-color: #f2f2f2;
+	width:100%;
+	padding-bottom:20px;
+}
+
+#package_section {
+	background-color: #292929;
+	background-image: url('../imgs/water_boy.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 800px
+}
+
+/* TESTAMONIALS */
+
+#testamonial_info {
+	position: relative;
+}
+
+.testamonial_div:before {
+	position:absolute;
+	width:100%;
+	height: 100%;
+	content: '';
+	background-color: inherit;
+	z-index: -1;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	transform-origin: bottom right;
+	transform: skewY(5deg)
+}
+
+
+.testamonial_div {
+	position: relative;
+	width:100%;
+	height: 170px;
+	padding-top: 20px;
+	background-color: white;
+	z-index:+1;
+}
+
+.testamonial_div:after{
+	position:absolute;
+	width:100%;
+	height: 100%;
+	content: '';
+	background-color: inherit;
+	z-index: -1;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	transform-origin: top left;
+	transform: skewY(5deg)
+}
+
+#testamonial_section {
+
+	background-color: #292929;
+	background-image: url('../imgs/water_shed.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:800px;
+}
+
+/* RECENT POSTS */
+
+#posts_info {
+
+	position: relative;
+}
+
+.posts_slants:before {
+	position:absolute;
+	width:100%;
+	height: 100%;
+	content: '';
+	background-color: inherit;
+	z-index: -1;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	transform-origin: bottom right;
+	transform: skewY(4deg)
+}
+
+
+.posts_slants {
+	position: relative;
+	width:100%;
+	height: 800px;
+	padding-top: 20px;
+	background-color: white;
+	z-index:+1;
+}
+
+.posts_slants:after{
+	position:absolute;
+	width:100%;
+	height: 100%;
+	content: '';
+	background-color: inherit;
+	z-index: -1;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	transform-origin: top left;
+	transform: skewY(4deg)
+}
+
+#go_pro {
+	display:block;
+	float:left;
+	width:20%;
+	height: auto;
+	margin: 0 auto;
+	padding-left:5%;
+	padding-right:1.66%;
+	margin-top:20px;
+}
+
+#africa{
+	display:block;
+	float:left;
+	width:20%;s
+	height: auto;
+	margin: 0 auto;
+	padding-left:1.66%;
+	padding-right:1.66%;
+	margin-top:20px;
+}
+
+#mountain{
+	display:block;
+	float:left;
+	width:20%;
+	height: auto;
+	margin: 0 auto;
+	padding-left:1.66%;
+	padding-right:1.66%;
+	margin-top:20px;
+}
+
+#activities {
+	display:block;
+	float:left;
+	width:20%;
+	height: auto;
+	margin: 0 auto;
+	padding-left:1.66%;
+	padding-right:5%;
+	margin-top:20px;
+}
+
+
+
+.view_more {
+	width: 30%;
+	background-color: #4caf50;
+	color:white;
+	padding: 14px 20px;
+	margin-left:35%;	
+	margin-right:35%;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.view_more:hover {
+	background-color: #45a049;
+}
+
+
+.read_more {
+	width: 30%;
+	background-color: #4caf50;
+	color:white;
+	padding: 14px 20px;
+	margin-left:35%;	
+	margin-right:35%;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.read_more:hover {
+	background-color: #45a049;
+}
+
+
+#recent_posts_img {
+	background-color: #292929;
+	background-image: url('../imgs/home_img_black.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:800px;
+
+}
+
+/* CONTACT US */
+
+#contact_area {
+
+	background-color: #292929;
+	padding:-top: 30px;
+}
+
+#contact_area label {
+
+	color: #ffffff;
+}
+
+ form {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 500px
+	border-radius: 5px;
+	background-color: #292929;
+	padding: 20px;
+	text-align: center;
+}
+
+input[type=text], select {
+	width: 40%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+
+	width: 30%;
+	background-color: #4caf50;
+	color:white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+#recent_posts_img header {
+	padding-top: 280px;
+	padding-bottom:80px;
+	text-align: center;
+	font-weight: 900;
+	font-family: 'Overpass' , sans-serif;
+	font-size: 120px;
+	margin: 0 auto;
+	color: #f1f1f1;
+}
+
+/* FOOTER */
+
+footer {
+	position:relative;
+	width: 100%;
+	height: 80px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #292929;
+}
+
+footer p {
+
+	color:white;
+}
+
